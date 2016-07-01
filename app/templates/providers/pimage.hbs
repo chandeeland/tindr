@@ -1,11 +1,9 @@
 {{outlet}}
 
+<button type="button" {{action "left" id}}>Left</button>
+
 <h1>
-  ****
-{{ model.contentUrl }}
-
-{{debugger}}
-
+  <img src="{{ imageUrl }}" />
 </h1>
 
-<img src="{{model.image}}" />
+<button type="button" {{action "right" id}}>Right</button>
