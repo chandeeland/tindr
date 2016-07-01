@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('provider');
+  this.route('providers', {path: '/providers'}, function() {
+    this.route('pimage', {path: '/pimage/:current'});
+  });
 });
 
 export default Router;
