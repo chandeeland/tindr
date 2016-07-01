@@ -1,9 +1,20 @@
-{{outlet}}
 
-<button type="button" {{action "left" id}}>Left</button>
 
-<h1>
-  <img src="{{ imageUrl }}" />
-</h1>
+<div align="center">
+  <div class="w3-card-8 w3-dark-grey" style="width:30%">
+    <div class="w3-container w3-center">
+       <h3>{{provider.presentationName}} {{current}}</h3>
+       <img src="{{imageUrl}}" alt="Avatar" style="width:100%">
+       {{outlet}}
+       <h5>Make it Suntory Time</h5>
+    </div>
+  </div>
+</div>
 
-<button type="button" {{action "right" id}}>Right</button>
+
+<div align="center">
+ <br><br><br>
+ <button class="drbutton1" {{action "left" id  }} style="vertical-align:middle"><span> No  </span></button>
+
+ <button class="drbutton2" {{action "right" id}} style="vertical-align:middle"><span>  Yes   </span></button>
+</div>

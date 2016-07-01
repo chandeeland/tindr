@@ -7,6 +7,6 @@ export default DS.Model.extend({
  presentationName: DS.attr('string'),
  specialty: DS.attr('string'),
  zipCode: DS.attr('string'),
- image: DS.attr('string')
+ hios_ids: DS.attr('array')
 
 });

@@ -1,0 +1,519 @@
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+// Prevent default anchor click behavior
+event.preventDefault();
+
+// Store hash
+var hash = this.hash;
+
+// Using jQuery's animate() method to add smooth page scroll
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+$('html, body').animate({
+scrollTop: $(hash).offset().top
+}, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+    });
+    } // End if
+    });
+    });
+    </script>
+    <style>
+    body, html, .main {
+      height: 100%;
+      font-family: Arial, Verdana, sans-serif;
+    }
+
+
+    section {
+    min-height: 100%;
+    }
+    </style>
+    <title></title>
+    </head>
+    <body>
+
+
+    <style>
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #24272e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      border: 1px solid #FFFFFF;
+    }
+
+    .button:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+
+    .button span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 0.95;
+      right: 0;
+    }
+    </style>
+
+
+
+    <br>
+    <br>
+    <style>
+    input[type=text] {
+        color: #707B7C;
+        width: 40%;
+        box-sizing: border-box;
+        border: 2px solid #2c3131;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 16px 20px 16px 40px;
+    }
+</style>
+</head>
+<body>
+
+
+
+
+<title></title>
+</head>
+<body>
+
+<!--<body background="tindr_landing.png">  
+
+
+background: 
+   url(number.png) 600px 10px no-repeat,  /* On top,    like z-index: 4; */
+   url(thingy.png) 10px 10px no-repeat,   /*            like z-index: 3; */
+   url(Paper-4.png);     
+-->
+
+<style>
+body {
+    background: url("tindr_landing_logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    opacity: 0.9;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<!-- ADDING HELP BUTTON */ -->
+<style>
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: relative; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+   position: relative;
+   background-color: #fefefe ;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 50%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+   color: white;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.modal-header {
+   padding: 2px 16px;
+   background-color: #6F6E63 ;
+   color: black;
+}
+
+.modal-body {padding: 2px 14px;}
+
+.modal-footer {
+   padding: 2px 14px;
+   background-color: #5cb85c ;
+   color: white;
+}
+</style>
+</head>
+<body>
+
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">About</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+ <!-- Modal content -->
+ <div class="modal-content">
+   <div class="modal-header">
+     <span class="close">×</span>
+     <h2>What is tindr?</h2>
+   </div>
+     <div class="modal-body">
+       <p> tindr is a smart and clever way to find a doctor based on your insurance and personal preferences </p>
+     </div>
+ </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+   modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+   modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
+}
+</script>
+
+
+
+<!-- Initial FIND YOUR MATCH BUTTON WITH SCROLLING -->
+<a href="#section2">
+<div align="center">
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
+  <button class="button" style="vertical-align:middle"><span> Find Your Match Now    </span></button>
+</div>
+
+
+
+<div class="main">
+</a>
+<section></section>
+</div>
+
+
+<div class="main" id="section2">
+<section style="background-color: #24272e">
+
+<p>
+<div align="center">
+  <p><font face="verdana" size= "6" color="#FFFFFF">
+    <br><br><br> First Tell Us About Yourself...  <br><br>
+  </font>
+</div>
+</p>
+
+
+
+<!-- Styling for Dropdown of Carriers -->
+
+
+<style>
+.dropbtn {
+    background-color: white;
+    color: #707B7C;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px 20px 42px;
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    color: #707B7C;
+    font-size: 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-indent: 26px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+</style>
+
+<style>
+select {
+    background-color: white;
+    color: #707B7C;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 39.9%;
+    box-sizing: border-box;
+    padding: 16px 20px 20px 42px;
+    text-align: left;
+    text-indent: 26px;
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+<div align="center">
+<form>
+  <input type="text" id="fname" name="fname" placeholder="First Name"><br><br><br>
+  <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br><br>
+  <!-- <input type="text" id="insurance" name="insurance" placeholder="Insurance Carrier"><br><br><br><br>-->
+  <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code"><br><br><br>
+  <input type="text" id="specialty" name="specialty" placeholder="Choose a Specialty"> <br><br><br>
+
+</form>
+
+
+<form>
+  <select id="insurance" name="insurance">
+    <option value="0">&nbsp;&nbsp;Choose Your Insurance Carrier</option>
+    <option value="17210">&nbsp;&nbsp;Aetna</option>
+    <option value="57165">&nbsp;&nbsp;Affinity Health Plan, Inc.</option>
+    <option value="49526">&nbsp;&nbsp;BlueCross BlueShield of Western New York</option>
+    <option value="36346">&nbsp;&nbsp;BlueShield of Northeastern New York</option>
+    <option value="94788">&nbsp;&nbsp;Capital District Physicians Health Plan</option>
+    <option value="92551">&nbsp;&nbsp;CDPHP</option>
+    <option value="44113">&nbsp;&nbsp;Empire HealthChoice Assurance, Inc.</option>
+    <option value="88582">&nbsp;&nbsp;EmblemHealth</option>
+    <option value="80519">&nbsp;&nbsp;Empire HealthChoice HMO, Inc.</option>
+    <option value="78124">&nbsp;&nbsp;Excellus Health Plan, Inc.</option>
+    <option value="25303">&nbsp;&nbsp;Fidelis Care</option>
+    <option value="91237">&nbsp;&nbsp;Healthfirst</option>
+    <option value="40064">&nbsp;&nbsp;HealthNow New York</option>
+    <option value="70552">&nbsp;&nbsp;Independent Health Association</option>
+    <option value="18029">&nbsp;&nbsp;Independent Health Benefits Corporation</option>
+    <option value="83744">&nbsp;&nbsp;Managed Health, Inc</option>
+    <option value="11177">&nbsp;&nbsp;MetroPlus Health Plan</option>
+    <option value="39595">&nbsp;&nbsp;WellCare of New York, Inc.</option>
+    <option value="56184">&nbsp;&nbsp;MVP Health Care</option>
+    <option value="89846">&nbsp;&nbsp;MVP Health Services</option>
+    <option value="82483">&nbsp;&nbsp;Northwell Health w/CareConnect</option>
+    <option value="74289">&nbsp;&nbsp;Oscar Insurance Corporation</option>
+    <option value="54297">&nbsp;&nbsp;UnitedHealthcare</option>
+    <option value="54235">&nbsp;&nbsp;UnitedHealthcare of New York, Inc.</option>
+    <option value="26420">&nbsp;&nbsp;UnitedHealthcare Oxford</option>
+    <option value="85629">&nbsp;&nbsp;UnitedHealthcare Oxford</option>
+  </select>
+</form> <br><br><br>
+
+<!--
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+
+  <div class="dropdown-content">
+    <a id= '1111' name = '1111'> Aetna </a>
+     
+
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div><br><br><br><br>
+-->
+
+</div>
+
+
+
+
+<style>
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #24272e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #FFFFFF;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 0.9;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<div align="center">
+  <button class="button2" style="vertical-align:middle"><span>Now Tell Us What You Like... </span></button>
+</div>
+
+
+
+
+
+
+
+
+<!--  </section>   -->
+
+
+
+
+
+</div>
+
+</body>
+</html>
+
+
+

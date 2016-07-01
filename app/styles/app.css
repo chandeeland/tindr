@@ -1,0 +1,361 @@
+
+    body, html, .main {
+      height: 100%;
+      font-family: Arial, Verdana, sans-serif;
+    }
+
+
+    section {
+    min-height: 100%;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #24272e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      border: 1px solid #FFFFFF;
+    }
+
+    .button:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+
+    .button span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 0.95;
+      right: 0;
+    }
+
+    input[type=text] {
+        color: #707B7C;
+        width: 40%;
+        box-sizing: border-box;
+        border: 2px solid #2c3131;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 16px 20px 16px 40px;
+    }
+
+body {
+    background: url("/assets/hackathon/tindr_landing_logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: relative; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+   position: relative;
+   background-color: #fefefe ;
+   margin: auto;
+   padding: 0;
+   border: 1px solid #888;
+   width: 50%;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+   color: white;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.modal-header {
+   padding: 2px 16px;
+   background-color: #6F6E63 ;
+   color: black;
+}
+
+.modal-body {padding: 2px 14px;}
+
+.modal-footer {
+   padding: 2px 14px;
+   background-color: #5cb85c ;
+   color: white;
+}
+
+.dropbtn {
+    background-color: white;
+    color: #707B7C;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px 20px 42px;
+    text-align: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    color: #707B7C;
+    font-size: 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    text-indent: 26px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+select {
+    background-color: white;
+    color: #707B7C;
+    padding: 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 39.9%;
+    box-sizing: border-box;
+    padding: 16px 20px 20px 42px;
+    text-align: left;
+    text-indent: 26px;
+}
+
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #24272e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #FFFFFF;
+}
+
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 0.9;
+  right: 0;
+}
+
+
+
+
+
+    .drbutton1 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #24272e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      border: 1px solid #FFFFFF;
+    }
+
+    .drbutton1:hover {
+        /*background-color: #555555; */
+        background-color: #bb7676;
+        color: white;
+    }
+
+    .drbutton1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+
+    .drbutton1 span:after {
+      content: '«';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      /*right: 0px; */
+      left: 0px;
+      transition: 0.5s;
+    }
+
+    .drbutton1:hover span {
+      /*padding-right: 25px; */
+      padding-left: 25px;
+    }
+
+    .drbutton1:hover span:after {
+      opacity: 0.95;
+      /*right: 0; */
+      left: 0;
+    }
+
+    .drbutton2 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #24272e;
+      /*background-color: #98cc98; */
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 500px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      border: 1px solid #FFFFFF;
+    }
+
+    .drbutton2:hover {
+        /*background-color: #555555; */
+        background-color: #98cc98;
+        color: white;
+    }
+
+    .drbutton2 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+
+    .drbutton2 span:after {
+      content: '»';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: 0px;
+      transition: 0.5s;
+    }
+
+    .drbutton2:hover span {
+      padding-right: 25px;
+    }
+
+    .drbutton2:hover span:after {
+      opacity: 0.95;
+      right: 0;
+    }

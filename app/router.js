@@ -7,7 +7,13 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('providers', {path: '/providers'}, function() {
-    this.route('pimage', {path: '/pimage/:current'});
+    this.route('pimage', {path: '/i'}, function() {
+      this.route('match', {path: '/match'});
+    });
+  });
+
+  this.route('home', {
+    path: '/'
   });
 });
 
