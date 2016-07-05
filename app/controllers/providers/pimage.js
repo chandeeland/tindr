@@ -48,7 +48,7 @@ export default Ember.Controller.extend({
       // this.transitionToRoute(go)
     },
     right: function() {
-      this.transitionToRoute('/providers/i/match');
+      this.i/transitionToRoute('/providers/match');
     }
   }
 });
